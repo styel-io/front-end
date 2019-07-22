@@ -2,19 +2,15 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Menu = () => {
-  const activeStyle = {
-    color: "green",
-    fontSize: "2rem"
-  };
   return (
     <div>
-      <ul>
+      <ul className="header">
         <li>
-          <NavLink exact to="/" activeStyle={activeStyle}>
-            Home
+          <NavLink exact to="/">
+            STYEL
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink exact to="/about" activeStyle={activeStyle}>
             About
           </NavLink>
@@ -28,9 +24,14 @@ const Menu = () => {
           <NavLink to="/posts" activeStyle={activeStyle}>
             Posts
           </NavLink>
+        </li> */}
+        <li>
+          <NavLink to="/login">Login</NavLink>
+        </li>
+        <li>
+          <NavLink to="/signup">Sign Up</NavLink>
         </li>
       </ul>
-      <hr />
     </div>
   );
 };
