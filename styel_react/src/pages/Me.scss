@@ -1,0 +1,16 @@
+.mainBox {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.avata {
+  display: table;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border: solid 1px black;
+}
+.avata span {
+  display: table-cell;
+  vertical-align: middle;
+}
