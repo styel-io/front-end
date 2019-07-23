@@ -6,10 +6,12 @@ export default class Menu extends Component {
   constructor(props) {
     super(props);
 
-    this.state = logout => {
-      const cookies = new Cookies();
-      let cookieToken = cookies.get("access_token");
-      console.log(cookieToken);
+    this.state = {
+      logout: () => {
+        const cookies = new Cookies();
+        let cookieToken = cookies.get("access_token");
+        console.log(cookieToken);
+      }
     };
   }
   render() {
